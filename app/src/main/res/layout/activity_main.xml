@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context=".MainActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" app:layout_anchorGravity="center" android:id="@+id/constraintLayout2"
+            app:layout_anchor="@+id/constraintLayout2" android:background="#1D2B53">
+
+        <TextView
+                android:text="@string/calculadora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/textView2"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                android:textStyle="bold" android:textAlignment="center" android:textSize="24sp"
+                android:fontFamily="@font/anton" android:textColor="#FFFFFF" app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/txt_resultado" android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"/>
+        <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/txt_resultado"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                android:visibility="invisible" android:textSize="16sp" android:textAlignment="center"
+                app:layout_constraintBottom_toTopOf="@+id/txt_classificacao" android:layout_marginBottom="36dp"
+                android:textColor="#FFFFFF"/>
+        <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/txt_classificacao"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                android:visibility="invisible" android:textSize="16sp"
+                android:textAlignment="center" app:layout_constraintBottom_toTopOf="@+id/textView8"
+                android:layout_marginBottom="60dp" android:textColor="#FFFFFF"/>
+        <TextView
+                android:text="Altura"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/textView8"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                android:textColor="#FAEF5D" android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/txt_altura"/>
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/txt_altura"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497" android:textAlignment="center"
+                app:layout_constraintBottom_toTopOf="@+id/textView9" android:layout_marginBottom="52dp"
+                android:textColor="#FFFFFF"/>
+        <TextView
+                android:text="Peso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/textView9"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                android:textColor="#FAEF5D" android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/txt_peso"/>
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/txt_peso"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.497" android:textAlignment="center"
+                app:layout_constraintBottom_toTopOf="@+id/txt_btn" android:layout_marginBottom="44dp"
+                android:textColor="#FFFFFF"/>
+        <Button
+                android:text="Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/txt_btn"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+                android:backgroundTint="#7E2553" android:textStyle="bold" android:textSize="34sp"
+                app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="100dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
